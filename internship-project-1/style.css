@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:lightgray;
+    color:black;
+}
+
+header{
+    background: purple;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:maroon;
+}
+
+.products ul{
+    padding-left:20px;
+}
+
+.card{
+    background:#f8f8f8;
+    padding:15px;
+    margin-top:10px;
+    border-left:5px solid ;
+}
+
+footer{
+    text-align:center;
+    background: black;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
