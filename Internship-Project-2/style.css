@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:lightgray;
+    color:black;
+    line-height:1.6;
+}
+
+
+header{
+    background-color:purple;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:black;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:pink;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:maroon;
+}
+
+
+.products ul{
+    padding-left:20px;
+    margin-bottom:20px;
+}
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:purple;
+    margin:15px 0 10px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.contact{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contact-container{
+    width:100%;
+    max-width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-container h3{
+    color:purple;
+    margin-bottom:20px;
+}
+
+.contact label{
+    display:block;
+    text-align:left;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    border-color:purple;
+}
+
+.contact button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:darkmagenta;
+}
+
+
+footer{
+    text-align:center;
+    background:black;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
+
+
+@media(max-width:1024px){
+
+    header{
+        padding:20px;
+        background-color:red;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cards-container{
+        flex-direction:column;
+    }
+
+    section{
+        margin:15px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+}
+
+
+@media(max-width:500px){
+
+    header{
+        padding:20px;
+        background-color:green;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    section{
+        padding:15px;
+        margin:10px;
+    }
+
+    nav ul li{
+        margin:8px 0;
+    }
+
+    body{
+        font-size:14px;
+    }
+
+    .hero{
+        padding:40px 15px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero button{
+        width:100%;
+    }
+
+    .card{
+        min-width:100%;
+    }
+}
